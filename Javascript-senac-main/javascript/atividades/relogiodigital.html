@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Clock</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background-image: radial-gradient(circle, #0077ff 0%, #242525 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock {
+  align-items: center;
+  background-color: rgb(197, 197, 193);
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: #000000;
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+  height: 200px;
+  width: 350px;
+}
+
+
+
+
+
+
+</style>
+
+    <div class="container">
+      <div class="clock"></div>
+    </div>
+
+
+<script>
+
+const getHours = () => {
+  const clock = document.getElementsByClassName('clock')[0]
+  const date = new Date()
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+  const seconds = date.getSeconds()
+  const hour = hours < 10 ? `0${hours}` : hours
+  const minute = minutes < 10 ? `0${minutes}` : minutes
+  const second = seconds < 10 ? `0${seconds}` : seconds
+  clock.innerHTML = `${hour}:${minute}:${second}`
+}
+
+setInterval(() => {
+  getHours()
+}, 1000)
+
+
+</script>
+
+
+
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: #c2b7b0;
+    font: 13pt Arial;
+}
+
+main {
+    background-color: rgba(17, 137, 170, 0.997);
+    width: 1400px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.titulo-2{
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+aside {
+    display: block; 
+    font-size: 10pt;
+    text-align: justify;
+    background-color: #4d96d6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+aside img {
+    width: 60px; 
+    display: block; 
+    float: left;
+    margin-right: 10px;
+}
+
+a, a:visited {
+    color: rgb(34, 34, 34);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: rgb(255, 30, 1);
+    text-decoration: none;
+}
+
+
